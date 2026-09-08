@@ -13,6 +13,8 @@ public class JoyconDemo : MonoBehaviour {
     public int jc_ind = 0;
     public Quaternion orientation;
 
+    public bool customizedRotation;
+
     void Start ()
     {
         gyro = new Vector3(0, 0, 0);
@@ -71,12 +73,20 @@ public class JoyconDemo : MonoBehaviour {
 
             // Accel values:  x, y, z axis values (in Gs)
             accel = j.GetAccel();
-
-            orientation = j.GetVector();
+            
 			if (j.GetButton(Joycon.Button.DPAD_UP)){
 				gameObject.GetComponent<Renderer>().material.color = Color.red;
 			} else{
 				gameObject.GetComponent<Renderer>().material.color = Color.blue;
+			}
+
+			if (customizedRotation)
+			{
+				orientation = j.GetCorrectedVector();
+			}
+			else
+			{
+				orientation = j.GetVector();
 			}
             gameObject.transform.rotation = orientation;
         }
