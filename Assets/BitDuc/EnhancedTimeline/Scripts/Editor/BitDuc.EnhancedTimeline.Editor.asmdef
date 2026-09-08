@@ -1,0 +1,21 @@
+{
+    "name": "BitDuc.EnhancedTimeline.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f06555f75b070af458a003d92f9efb00",
+        "GUID:02f771204943f4a40949438e873e3eff",
+        "GUID:cb034e203f7948198800d5815de58f2b",
+        "GUID:ca4b0b58137d84c0f8fc6d35ee4bc5d2"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

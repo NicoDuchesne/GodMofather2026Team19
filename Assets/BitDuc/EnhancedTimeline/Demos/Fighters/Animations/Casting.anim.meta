@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: be725a579153c45b9b8d768093f22b4a
+labels:
+- UnityAI
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Animations/Casting.anim
+  uploadId: 774665

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 64a8c8bb6aaf361419a4258e5a5b5569
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Animations/Armature_CombatWalk.anim
+  uploadId: 774665

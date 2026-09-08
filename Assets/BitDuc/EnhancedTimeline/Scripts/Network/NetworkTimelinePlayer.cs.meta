@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 120538d3f7934a78a99f69dc0adf8ca1
+timeCreated: 1658081803
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Network/NetworkTimelinePlayer.cs
+  uploadId: 774665

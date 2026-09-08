@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df0da94901c00f44e9b255874be38b9d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Animations/Armature_WalkBack.anim
+  uploadId: 774665

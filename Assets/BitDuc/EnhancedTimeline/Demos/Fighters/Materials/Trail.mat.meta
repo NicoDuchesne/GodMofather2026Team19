@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 298f2af87f6294c718c035da0439d66a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Materials/Trail.mat
+  uploadId: 774665

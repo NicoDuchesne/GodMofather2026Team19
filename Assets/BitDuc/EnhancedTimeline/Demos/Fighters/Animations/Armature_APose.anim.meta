@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1e0fe066b43914148aa0cec223702380
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Animations/Armature_APose.anim
+  uploadId: 774665

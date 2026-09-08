@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 491bb6a361a64b7db32ff5a4266edb5a
+timeCreated: 1749824818
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Timeline/DirectorPrototype.cs
+  uploadId: 774665

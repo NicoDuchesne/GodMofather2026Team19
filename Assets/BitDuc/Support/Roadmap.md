@@ -1,0 +1,18 @@
+- [x] Create github repo
+- [x] Base implementation for menus
+  - [x] Implement Authority Toggles
+- [ ] Integrate into projects
+  - [ ] Soulslike Engine
+    - [ ] Integrate Welcome
+    - [ ] Integrate New Menu
+    - [ ] Integrate Defines
+  - [ ] Network Input
+    - [x] Integrate Welcome
+    - [ ] Integrate New Menu
+    - [ ] Integrate Defines
+  - [ ] Enhanced Timeline
+    - [ ] Integrate Welcome
+    - [ ] Integrate New Menu
+    - [ ] Integrate Defines
+    - [ ] Integrate FishNet
+    - [ ] Integrate N4GO

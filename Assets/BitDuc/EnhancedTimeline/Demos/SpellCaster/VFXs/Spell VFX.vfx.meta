@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 744e94b7c3ebfca4c9d71fcf42860a5c
+VisualEffectImporter:
+  externalObjects: {}
+  serializedVersion: 1
+  template:
+    name: 
+    category: 
+    description: 
+    icon: {instanceID: 0}
+    thumbnail: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/SpellCaster/VFXs/Spell VFX.vfx
+  uploadId: 774665

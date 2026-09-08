@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 2612b35afa0a472281e72d11bd69e63b
+timeCreated: 1738676185
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/VectorGizmos/ArrowGizmo.cs
+  uploadId: 774665

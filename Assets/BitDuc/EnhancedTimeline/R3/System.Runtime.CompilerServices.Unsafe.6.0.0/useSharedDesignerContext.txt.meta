@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 592081c032ae54f33848393799940fff
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/System.Runtime.CompilerServices.Unsafe.6.0.0/useSharedDesignerContext.txt
+  uploadId: 774665

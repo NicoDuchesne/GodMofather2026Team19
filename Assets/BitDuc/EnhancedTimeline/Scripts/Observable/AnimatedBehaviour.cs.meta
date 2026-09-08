@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7d03a01f06ebf4a50a0c86e3327e42ec
+timeCreated: 1658039794
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Observable/AnimatedBehaviour.cs
+  uploadId: 774665

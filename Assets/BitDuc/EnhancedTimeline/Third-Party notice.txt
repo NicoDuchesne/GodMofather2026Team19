@@ -1,0 +1,17 @@
+Third-Party Notices
+
+This project makes use of the following third-party assets, which are subject to their respective licenses:
+
+1. R3 Library
+Version: 1.2.9
+Author: Cysharp
+License: MIT
+URL: https://github.com/Cysharp/R3
+
+2. LiberationSans Font
+Author: Red Hat, Inc.
+License: SIL OPEN FONT LICENSE Version 1.1
+
+Notes:
+
+All third-party software is provided under their respective licenses. Ensure compliance with these licenses when using or distributing this software.

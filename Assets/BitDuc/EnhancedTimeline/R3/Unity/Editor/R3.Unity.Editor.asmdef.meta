@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f8c68d614fe30d647996098360b5e0d5
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/Unity/Editor/R3.Unity.Editor.asmdef
+  uploadId: 774665

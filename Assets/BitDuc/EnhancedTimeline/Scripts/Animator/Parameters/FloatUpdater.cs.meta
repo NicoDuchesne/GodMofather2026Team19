@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: fe06c853be4c5475d95821907b50ed48
+timeCreated: 1659808429
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Animator/Parameters/FloatUpdater.cs
+  uploadId: 774665

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ff238d614aeac41ea855abe0e03b7d51
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/System.Threading.Channels.8.0.0/LICENSE.TXT
+  uploadId: 774665

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c65b0d3263bc4398929f2ede6432630
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Scenes/LightingData.asset
+  uploadId: 774665

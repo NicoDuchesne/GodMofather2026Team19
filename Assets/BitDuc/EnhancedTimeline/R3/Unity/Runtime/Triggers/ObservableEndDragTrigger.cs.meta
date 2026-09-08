@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b8406da5e64ec9846a5c5f10a671fede
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/Unity/Runtime/Triggers/ObservableEndDragTrigger.cs
+  uploadId: 774665

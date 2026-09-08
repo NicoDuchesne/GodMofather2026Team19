@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 66df2e1b3e44d40deaf23b9c99bbde2e
+timeCreated: 1738618286
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/Editor/NoteDrawer.cs
+  uploadId: 774665

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 94cbe8f58eb5241ae9c46300897154f6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Timeline/EnhancedTimelinePlayer.cs
+  uploadId: 774665

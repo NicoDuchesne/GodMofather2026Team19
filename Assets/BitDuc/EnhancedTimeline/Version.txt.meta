@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6994c336f5bb340be9aca25b2d80909c
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Version.txt
+  uploadId: 774665

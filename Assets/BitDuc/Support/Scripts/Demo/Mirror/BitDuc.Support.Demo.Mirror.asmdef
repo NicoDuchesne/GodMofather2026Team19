@@ -1,0 +1,20 @@
+{
+    "name": "BitDuc.Support.Demo.Mirror",
+    "rootNamespace": "",
+    "references": [
+        "GUID:30817c1a0e6d646d99c048fc403f5979",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:05f8966b54b2e46f4a9fa7b3c6c62cb2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MIRROR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

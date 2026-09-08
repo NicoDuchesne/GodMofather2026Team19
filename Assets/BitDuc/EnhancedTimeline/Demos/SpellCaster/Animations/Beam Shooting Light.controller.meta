@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 458b41f0665a0b3409da43830838786a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/SpellCaster/Animations/Beam Shooting
+    Light.controller
+  uploadId: 774665

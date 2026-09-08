@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 5fbb9ce0396c84400ae00159b01b81a4
+timeCreated: 1647705505
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Observable/SimpleMarker.cs
+  uploadId: 774665

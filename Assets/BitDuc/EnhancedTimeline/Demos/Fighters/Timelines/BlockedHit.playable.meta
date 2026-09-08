@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 498fa0121c29845ce9a5eae9a034a731
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Timelines/BlockedHit.playable
+  uploadId: 774665

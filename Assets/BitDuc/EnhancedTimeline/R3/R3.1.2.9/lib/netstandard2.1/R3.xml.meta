@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f31c053d4b55f4f75a2565af4ff0f1e5
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/R3.1.2.9/lib/netstandard2.1/R3.xml
+  uploadId: 774665

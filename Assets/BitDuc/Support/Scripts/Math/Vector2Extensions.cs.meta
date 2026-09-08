@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 07a1a2ce596c4e43b9a803568ec82612
+timeCreated: 1736783453
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/Math/Vector2Extensions.cs
+  uploadId: 774665

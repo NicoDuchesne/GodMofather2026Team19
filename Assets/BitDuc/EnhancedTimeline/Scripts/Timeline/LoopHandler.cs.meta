@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 97a6a07bdeed4fc1bde6605e0ace76fc
+timeCreated: 1749648938
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Timeline/LoopHandler.cs
+  uploadId: 774665

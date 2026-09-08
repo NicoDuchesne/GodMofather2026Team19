@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 52641452e5a8194429bbdce2b14a5b35
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/Unity/Runtime/Triggers/ObservableTriggerExtensions.cs
+  uploadId: 774665

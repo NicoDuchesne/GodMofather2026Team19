@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: f8378746429b47e196cd402afac3849b
+timeCreated: 1730295696
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Animator/AnimatorService.cs
+  uploadId: 774665

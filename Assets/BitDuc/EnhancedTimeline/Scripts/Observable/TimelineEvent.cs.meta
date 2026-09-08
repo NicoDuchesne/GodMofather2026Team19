@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 1fc97a4d0ee7440a3b816c6633a0280b
+timeCreated: 1647713015
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Observable/TimelineEvent.cs
+  uploadId: 774665

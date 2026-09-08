@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f37f4d340dbe5f24b857641b96933fd7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/SpellCaster/Animations/Armature_Spell.PrepareLoop.anim
+  uploadId: 774665

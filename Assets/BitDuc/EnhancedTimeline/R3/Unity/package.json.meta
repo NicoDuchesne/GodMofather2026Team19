@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ab73519690403a9428c7d05e008ca466
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/Unity/package.json
+  uploadId: 774665

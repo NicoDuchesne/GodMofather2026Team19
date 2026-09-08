@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: bd7ff107da444398b6f2d067659022e6
+timeCreated: 1730571745
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Scripts/Multiplayer/ServerFighterInput.cs
+  uploadId: 774665

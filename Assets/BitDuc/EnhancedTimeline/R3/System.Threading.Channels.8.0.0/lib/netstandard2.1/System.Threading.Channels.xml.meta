@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7d84af9b7e30c492cbbdc4f8c17b2453
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/System.Threading.Channels.8.0.0/lib/netstandard2.1/System.Threading.Channels.xml
+  uploadId: 774665

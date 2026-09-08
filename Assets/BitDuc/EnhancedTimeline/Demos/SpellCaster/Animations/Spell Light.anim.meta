@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7b7dd9c752265ee4083b6216b1d2ca8e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/SpellCaster/Animations/Spell Light.anim
+  uploadId: 774665

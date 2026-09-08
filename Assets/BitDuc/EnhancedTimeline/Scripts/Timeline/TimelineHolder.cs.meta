@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c53fd9d1f7ac47dea287d24bfe7b4b39
+timeCreated: 1749658238
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Timeline/TimelineHolder.cs
+  uploadId: 774665

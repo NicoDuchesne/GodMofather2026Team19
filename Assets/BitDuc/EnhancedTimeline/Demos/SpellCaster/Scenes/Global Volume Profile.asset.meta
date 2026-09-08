@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0baeccf1ef5c12c44bcf9619582859ff
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/SpellCaster/Scenes/Global Volume
+    Profile.asset
+  uploadId: 774665

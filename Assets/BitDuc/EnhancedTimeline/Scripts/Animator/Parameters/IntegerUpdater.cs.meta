@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 8f2b9e6c913294800992a83afcd7659b
+timeCreated: 1659808421
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Animator/Parameters/IntegerUpdater.cs
+  uploadId: 774665

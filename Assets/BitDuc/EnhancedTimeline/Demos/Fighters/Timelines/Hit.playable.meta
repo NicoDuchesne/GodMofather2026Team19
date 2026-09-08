@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 76a97e579394e57438749d8ca95ac849
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Timelines/Hit.playable
+  uploadId: 774665

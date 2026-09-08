@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 49c542a9b6d3c4391bb55c3504ac9e52
+timeCreated: 1658422679
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Animator/AnimatorParameterClip.cs
+  uploadId: 774665

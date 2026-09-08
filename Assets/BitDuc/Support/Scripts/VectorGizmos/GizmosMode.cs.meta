@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7f6afbe904114a94910b96e6bed335d8
+timeCreated: 1738591873
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/VectorGizmos/GizmosMode.cs
+  uploadId: 774665

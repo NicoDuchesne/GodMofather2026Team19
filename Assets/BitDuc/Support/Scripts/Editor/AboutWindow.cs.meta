@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 561724a403fe44f090e80761b2e38de9
+timeCreated: 1746025849
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/Editor/AboutWindow.cs
+  uploadId: 774665

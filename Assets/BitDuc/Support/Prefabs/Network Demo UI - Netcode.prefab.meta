@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f3292e6a08842498689cbef05ec4b2e1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Prefabs/Network Demo UI - Netcode.prefab
+  uploadId: 774665

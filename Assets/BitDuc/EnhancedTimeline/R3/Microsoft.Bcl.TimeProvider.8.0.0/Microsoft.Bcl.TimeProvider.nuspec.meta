@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 03f4e2b60179c44139e3ed0686b09915
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/R3/Microsoft.Bcl.TimeProvider.8.0.0/Microsoft.Bcl.TimeProvider.nuspec
+  uploadId: 774665

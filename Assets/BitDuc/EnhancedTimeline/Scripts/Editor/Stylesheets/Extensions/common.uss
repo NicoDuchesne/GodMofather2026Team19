@@ -1,0 +1,33 @@
+.LoopTargetStyle
+{
+    width:16px;
+    height:16px;
+    background-image: resource("collapsed-right-arrow");
+}
+
+.LoopTargetStyle:hover:focus:checked
+{
+    background-image: resource("bright-right-arrow");
+}
+
+.LoopTargetStyle:checked
+{
+    background-image: resource("right-arrow");
+}
+
+.LoopBackStyle
+{
+    width:16px;
+    height:16px;
+    background-image: resource("collapsed-left-arrow");
+}
+
+.LoopBackStyle:hover:focus:checked
+{
+    background-image: resource("bright-left-arrow");
+}
+
+.LoopBackStyle:checked
+{
+    background-image: resource("left-arrow");
+}

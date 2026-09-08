@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 467110cb69fe94e74abc66144fee2812
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Materials/Grid.mat
+  uploadId: 774665

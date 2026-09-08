@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd540579ea9cc41bb9fd62c070f86f62
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Timelines/Block.playable
+  uploadId: 774665

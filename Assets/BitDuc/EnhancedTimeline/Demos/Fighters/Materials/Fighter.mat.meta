@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aad01c6bc60444dc3baa5b0ff77b4505
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Materials/Fighter.mat
+  uploadId: 774665

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7f8117c21d134728a1220868f4f3f68f
+timeCreated: 1730291483
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Network/Estimator.cs
+  uploadId: 774665

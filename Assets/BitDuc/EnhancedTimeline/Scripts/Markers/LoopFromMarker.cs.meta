@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: f24354a8fbe94c5b92df49a4f26cbfeb
+timeCreated: 1749482717
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Markers/LoopFromMarker.cs
+  uploadId: 774665

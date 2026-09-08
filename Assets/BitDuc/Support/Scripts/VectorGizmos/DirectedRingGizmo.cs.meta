@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 39738a161d0d4d4bb9ff8856640061be
+timeCreated: 1738594324
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/VectorGizmos/DirectedRingGizmo.cs
+  uploadId: 774665

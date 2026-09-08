@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a81e2ffb2cf4642789a44d706ce0b773
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/Demo/Mirror/BitDuc.Support.Demo.Mirror.asmdef
+  uploadId: 774665

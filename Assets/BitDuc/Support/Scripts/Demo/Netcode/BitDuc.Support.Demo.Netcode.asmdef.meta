@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e9b052b8a1f5141cc8b27eb3654feeec
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/Demo/Netcode/BitDuc.Support.Demo.Netcode.asmdef
+  uploadId: 774665

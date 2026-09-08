@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67d42ced6fcb0d744aecd26cc88343b5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Demos/Fighters/Animations/Armature_BlockEnd.anim
+  uploadId: 774665

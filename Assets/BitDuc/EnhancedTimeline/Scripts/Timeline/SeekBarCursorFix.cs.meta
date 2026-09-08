@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 2358ba38476247bda8ce0b4e10136d12
+timeCreated: 1732635515
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/EnhancedTimeline/Scripts/Timeline/SeekBarCursorFix.cs
+  uploadId: 774665

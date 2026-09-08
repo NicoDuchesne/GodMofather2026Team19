@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ca4b0b58137d84c0f8fc6d35ee4bc5d2
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305512
+  packageName: Enhanced Timeline
+  packageVersion: 1.1.1
+  assetPath: Assets/BitDuc/Support/Scripts/Editor/BitDuc.Support.Editor.asmdef
+  uploadId: 774665
