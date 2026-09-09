@@ -245,6 +245,7 @@ public class Joycon
         Quaternion rawRotation = GetVector();
 
         Quaternion correction = Quaternion.Euler(90f, 0f, 0f);
+        //Quaternion correction = Quaternion.Euler(0f, 90f, 0f);
 
         return correction * rawRotation;
     }
@@ -255,7 +256,7 @@ public class Joycon
         Quaternion rotation = GetCorrectedVector();
         Vector3 euler = rotation.eulerAngles;
 
-        return Quaternion.Euler(0f, 0f, euler.z);
+        return Quaternion.Euler(0f, 0f, euler.x);
     }
     
 	public int Attach(byte leds_ = 0x0)
