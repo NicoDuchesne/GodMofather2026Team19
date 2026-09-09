@@ -239,6 +239,7 @@ public class Joycon
         }
     }
     
+    //Get the quaternion from GetVector(), apply a correction to the axis for a more natural rotation
     public Quaternion GetCorrectedVector()
     {
         Quaternion rawRotation = GetVector();
@@ -248,6 +249,7 @@ public class Joycon
         return correction * rawRotation;
     }
     
+    //Get the quaternion from GetCorrectedVector(), but returns a quaternion with only the Roll rotation on axis Z
     public Quaternion GetRollVector()
     {
         Quaternion rotation = GetCorrectedVector();
