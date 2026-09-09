@@ -294,7 +294,8 @@ MonoBehaviour:
   accel: {x: 0, y: 0, z: 0}
   jc_ind: 0
   orientation: {x: 0, y: 0, z: 0, w: 0}
-  customizedRotation: 1
+  customizedRotation: 0
+  lockedRotation: 1
 --- !u!65 &1142973170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -426,6 +427,7 @@ MonoBehaviour:
   jc_ind: 1
   orientation: {x: 0, y: 0, z: 0, w: 0}
   customizedRotation: 0
+  lockedRotation: 1
 --- !u!65 &1451913975
 BoxCollider:
   m_ObjectHideFlags: 0

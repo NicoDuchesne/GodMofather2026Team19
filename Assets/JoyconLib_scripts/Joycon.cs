@@ -248,6 +248,14 @@ public class Joycon
         return correction * rawRotation;
     }
     
+    public Quaternion GetRollVector()
+    {
+        Quaternion rotation = GetCorrectedVector();
+        Vector3 euler = rotation.eulerAngles;
+
+        return Quaternion.Euler(0f, 0f, euler.z);
+    }
+    
 	public int Attach(byte leds_ = 0x0)
     {
         state = state_.ATTACHED;

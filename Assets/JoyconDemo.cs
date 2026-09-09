@@ -14,6 +14,7 @@ public class JoyconDemo : MonoBehaviour {
     public Quaternion orientation;
 
     public bool customizedRotation;
+    public bool lockedRotation;
 
     void Start ()
     {
@@ -83,7 +84,10 @@ public class JoyconDemo : MonoBehaviour {
 			if (customizedRotation)
 			{
 				orientation = j.GetCorrectedVector();
-			}
+			} else if (lockedRotation)
+			{
+				orientation = j.GetRollVector();
+			} 
 			else
 			{
 				orientation = j.GetVector();
