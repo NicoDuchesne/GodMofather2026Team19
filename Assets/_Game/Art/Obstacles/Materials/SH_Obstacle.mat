@@ -44,7 +44,7 @@ Material:
     - _ReceiveShadows: 1
     - _SpecularHighlights: 1
     - __dirty: 0
-    - _hdr: 10
+    - _hdr: 7
     m_Colors:
     - _Color: {r: 0.86468405, g: 0.5943396, b: 1, a: 1}
   m_BuildTextureStacks: []
