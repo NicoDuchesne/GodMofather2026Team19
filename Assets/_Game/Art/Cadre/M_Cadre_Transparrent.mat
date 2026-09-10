@@ -27,6 +27,14 @@ Material:
         m_Texture: {fileID: 2800000, guid: 331313632800b5c429d2ce72e48ae626, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 553ca79a50ffc4b4991e832ff3835d3b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,12 +50,24 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnvironmentReflections: 1
+    - _Noise_Max: 0.319
+    - _Noise_Min: -0.29
+    - _Noise_tile_X: 1.14
+    - _Noise_tile_Y: 1.25
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SpecularHighlights: 1
-    - _Transparence: 0.348
+    - _Transparence: 0.5
+    - _fresnel_scale: 21.47
+    - _hdr: 1.45
+    - _max: 0.35
+    - _min: 1.23
+    - _smoothness: 1
     m_Colors:
-    - _Color: {r: 0.72101855, g: 0.6991456, b: 0.7735849, a: 1}
+    - _Color: {r: 0.11921501, g: 0.15858744, b: 0.5377358, a: 1}
+    - _Color0: {r: 0.3165537, g: 0.3019608, b: 0.5568628, a: 1}
+    - _Color_Noise: {r: 0.75, g: 0.85150087, b: 1, a: 0}
+    - _speed: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
