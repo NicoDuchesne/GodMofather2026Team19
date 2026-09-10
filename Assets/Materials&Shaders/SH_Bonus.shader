@@ -636,7 +636,6 @@ Shader "SH_Bonus"
 					BitangentWS = cross(NormalWS, -TangentWS);
 				#endif
 
-				Gradient gradient20 = NewGradient( 0, 4, 2, float4( 0.4781926, 0.1674083, 0.6226415, 0 ), float4( 0.7547507, 0.5494838, 0.7924528, 0.1411765 ), float4( 1, 0.8592723, 0.75, 0.2676432 ), float4( 1, 1, 1, 0.5499962 ), 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				float2 texCoord27 = input.ase_texcoord7.xy * float2( 0.79,0.95 ) + float2( 0,0 );
 				float2 texCoord40 = input.ase_texcoord7.xy * float2( 1.61,1.52 ) + float2( 0,0 );
 				float smoothstepResult46 = smoothstep( _min , _max , length( (texCoord40*1.0 + float2( -0.8,-0.63 )) ));
@@ -645,9 +644,10 @@ Shader "SH_Bonus"
 				float2 panner18 = ( 1.0 * _Time.y * _Noise_Speed + texCoord15);
 				float2 texCoord30 = input.ase_texcoord7.xy * _Distortion_Tiling + float2( 0,0 );
 				float2 panner32 = ( 1.0 * _Time.y * _DIstortion_Speed + texCoord30);
+				Gradient gradient20 = NewGradient( 0, 3, 2, float4( 0.2958353, 0.1490196, 0.7058824, 0 ), float4( 0.8490566, 0.4765931, 0.7810211, 0.3147021 ), float4( 0.8726415, 0.9705327, 1, 1 ), 0, 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				
 
-				float3 BaseColor = ( SampleGradient( gradient20, temp_output_47_0.r ) * ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * _Emissive_Intensity ).rgb;
+				float3 BaseColor = ( ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * SampleGradient( gradient20, temp_output_47_0.r ) * _Emissive_Intensity ).rgb;
 				float3 Normal = float3(0, 0, 1);
 				float3 Specular = 0.5;
 				float Metallic = 0;
@@ -1828,7 +1828,6 @@ Shader "SH_Bonus"
 				float3 PositionRWS = GetCameraRelativePositionWS( input.positionWS );
 				float4 ShadowCoord = shadowCoord;
 
-				Gradient gradient20 = NewGradient( 0, 4, 2, float4( 0.4781926, 0.1674083, 0.6226415, 0 ), float4( 0.7547507, 0.5494838, 0.7924528, 0.1411765 ), float4( 1, 0.8592723, 0.75, 0.2676432 ), float4( 1, 1, 1, 0.5499962 ), 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				float2 texCoord27 = input.ase_texcoord3.xy * float2( 0.79,0.95 ) + float2( 0,0 );
 				float2 texCoord40 = input.ase_texcoord3.xy * float2( 1.61,1.52 ) + float2( 0,0 );
 				float smoothstepResult46 = smoothstep( _min , _max , length( (texCoord40*1.0 + float2( -0.8,-0.63 )) ));
@@ -1837,9 +1836,10 @@ Shader "SH_Bonus"
 				float2 panner18 = ( 1.0 * _Time.y * _Noise_Speed + texCoord15);
 				float2 texCoord30 = input.ase_texcoord3.xy * _Distortion_Tiling + float2( 0,0 );
 				float2 panner32 = ( 1.0 * _Time.y * _DIstortion_Speed + texCoord30);
+				Gradient gradient20 = NewGradient( 0, 3, 2, float4( 0.2958353, 0.1490196, 0.7058824, 0 ), float4( 0.8490566, 0.4765931, 0.7810211, 0.3147021 ), float4( 0.8726415, 0.9705327, 1, 1 ), 0, 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				
 
-				float3 BaseColor = ( SampleGradient( gradient20, temp_output_47_0.r ) * ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * _Emissive_Intensity ).rgb;
+				float3 BaseColor = ( ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * SampleGradient( gradient20, temp_output_47_0.r ) * _Emissive_Intensity ).rgb;
 				float3 Emission = 0;
 				float Alpha = temp_output_47_0.r;
 				#if defined( _ALPHATEST_ON )
@@ -2138,7 +2138,6 @@ Shader "SH_Bonus"
 				float3 PositionRWS = GetCameraRelativePositionWS( input.positionWS );
 				float4 ShadowCoord = shadowCoord;
 
-				Gradient gradient20 = NewGradient( 0, 4, 2, float4( 0.4781926, 0.1674083, 0.6226415, 0 ), float4( 0.7547507, 0.5494838, 0.7924528, 0.1411765 ), float4( 1, 0.8592723, 0.75, 0.2676432 ), float4( 1, 1, 1, 0.5499962 ), 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				float2 texCoord27 = input.ase_texcoord1.xy * float2( 0.79,0.95 ) + float2( 0,0 );
 				float2 texCoord40 = input.ase_texcoord1.xy * float2( 1.61,1.52 ) + float2( 0,0 );
 				float smoothstepResult46 = smoothstep( _min , _max , length( (texCoord40*1.0 + float2( -0.8,-0.63 )) ));
@@ -2147,9 +2146,10 @@ Shader "SH_Bonus"
 				float2 panner18 = ( 1.0 * _Time.y * _Noise_Speed + texCoord15);
 				float2 texCoord30 = input.ase_texcoord1.xy * _Distortion_Tiling + float2( 0,0 );
 				float2 panner32 = ( 1.0 * _Time.y * _DIstortion_Speed + texCoord30);
+				Gradient gradient20 = NewGradient( 0, 3, 2, float4( 0.2958353, 0.1490196, 0.7058824, 0 ), float4( 0.8490566, 0.4765931, 0.7810211, 0.3147021 ), float4( 0.8726415, 0.9705327, 1, 1 ), 0, 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				
 
-				float3 BaseColor = ( SampleGradient( gradient20, temp_output_47_0.r ) * ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * _Emissive_Intensity ).rgb;
+				float3 BaseColor = ( ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * SampleGradient( gradient20, temp_output_47_0.r ) * _Emissive_Intensity ).rgb;
 				float Alpha = temp_output_47_0.r;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
@@ -2971,7 +2971,6 @@ Shader "SH_Bonus"
 					BitangentWS = cross(NormalWS, -TangentWS);
 				#endif
 
-				Gradient gradient20 = NewGradient( 0, 4, 2, float4( 0.4781926, 0.1674083, 0.6226415, 0 ), float4( 0.7547507, 0.5494838, 0.7924528, 0.1411765 ), float4( 1, 0.8592723, 0.75, 0.2676432 ), float4( 1, 1, 1, 0.5499962 ), 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				float2 texCoord27 = input.ase_texcoord7.xy * float2( 0.79,0.95 ) + float2( 0,0 );
 				float2 texCoord40 = input.ase_texcoord7.xy * float2( 1.61,1.52 ) + float2( 0,0 );
 				float smoothstepResult46 = smoothstep( _min , _max , length( (texCoord40*1.0 + float2( -0.8,-0.63 )) ));
@@ -2980,9 +2979,10 @@ Shader "SH_Bonus"
 				float2 panner18 = ( 1.0 * _Time.y * _Noise_Speed + texCoord15);
 				float2 texCoord30 = input.ase_texcoord7.xy * _Distortion_Tiling + float2( 0,0 );
 				float2 panner32 = ( 1.0 * _Time.y * _DIstortion_Speed + texCoord30);
+				Gradient gradient20 = NewGradient( 0, 3, 2, float4( 0.2958353, 0.1490196, 0.7058824, 0 ), float4( 0.8490566, 0.4765931, 0.7810211, 0.3147021 ), float4( 0.8726415, 0.9705327, 1, 1 ), 0, 0, 0, 0, 0, float2( 1, 0 ), float2( 1, 1 ), 0, 0, 0, 0, 0, 0 );
 				
 
-				float3 BaseColor = ( SampleGradient( gradient20, temp_output_47_0.r ) * ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * _Emissive_Intensity ).rgb;
+				float3 BaseColor = ( ( temp_output_47_0 + tex2D( _Noise, panner18 ) + tex2D( _Dist, panner32 ) ) * SampleGradient( gradient20, temp_output_47_0.r ) * _Emissive_Intensity ).rgb;
 				float3 Normal = float3(0, 0, 1);
 				float3 Specular = 0.5;
 				float Metallic = 0;
@@ -3991,21 +3991,21 @@ Node;AmplifyShaderEditor.ScaleAndOffsetNode, AmplifyShaderEditor, Version=0.0.0.
 Node;AmplifyShaderEditor.SamplerNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;64;-2064,-1120;Inherit;True;Property;_TextureSample0;Texture Sample 0;7;0;Create;True;0;0;0;False;0;False;-1;None;a089c26c0d7682640a569296e7a66cb0;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;False;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5
 Node;AmplifyShaderEditor.OneMinusNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;44;-1904,-480;Inherit;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SmoothstepOpNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;19;-1824,-816;Inherit;True;3;0;FLOAT;0;False;1;FLOAT;0.5;False;2;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;13;-2400,16;Inherit;False;Property;_Noise_Tiling;Noise_Tiling;2;0;Create;True;0;0;0;False;0;False;2,2;1.4,0.72;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
-Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;29;-2528,432;Inherit;False;Property;_Distortion_Tiling;Distortion_Tiling;5;0;Create;True;0;0;0;False;0;False;2,2;0.45,0.13;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
+Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;13;-2400,16;Inherit;False;Property;_Noise_Tiling;Noise_Tiling;2;0;Create;True;0;0;0;False;0;False;2,2;2.23,1.41;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
+Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;29;-2528,432;Inherit;False;Property;_Distortion_Tiling;Distortion_Tiling;5;0;Create;True;0;0;0;False;0;False;2,2;0.81,0.64;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.TextureCoordinatesNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;15;-2080,-48;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;16;-2128,192;Inherit;False;Property;_Noise_Speed;Noise_Speed;1;0;Create;True;0;0;0;False;0;False;0,-10;0,-0.35;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
+Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;16;-2128,192;Inherit;False;Property;_Noise_Speed;Noise_Speed;1;0;Create;True;0;0;0;False;0;False;0,-10;0,-0.2;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.TextureCoordinatesNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;30;-2208,368;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.Vector2Node, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;31;-2256,608;Inherit;False;Property;_DIstortion_Speed;DIstortion_Speed;4;0;Create;True;0;0;0;False;0;False;0,-0.1;0,-0.3;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.PannerNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;18;-1648,-16;Inherit;False;3;0;FLOAT2;0,0;False;2;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.PannerNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;32;-1776,400;Inherit;False;3;0;FLOAT2;0,0;False;2;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT2;0
-Node;AmplifyShaderEditor.GradientNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;20;-960,-448;Inherit;False;0;4;2;0.4781926,0.1674083,0.6226415,0;0.7547507,0.5494838,0.7924528,0.1411765;1,0.8592723,0.75,0.2676432;1,1,1,0.5499962;1,0;1,1;0;1;OBJECT;0
+Node;AmplifyShaderEditor.GradientNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;20;-960,-448;Inherit;False;0;3;2;0.2958353,0.1490196,0.7058824,0;0.8490566,0.4765931,0.7810211,0.3147021;0.8726415,0.9705327,1,1;1,0;1,1;0;1;OBJECT;0
 Node;AmplifyShaderEditor.SamplerNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;21;-1456,-48;Inherit;True;Property;_Noise;Noise;0;0;Create;True;0;0;0;False;0;False;-1;None;4d7fe46c1ba35414889a85566a42f26f;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;False;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5
 Node;AmplifyShaderEditor.SamplerNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;33;-1584,368;Inherit;True;Property;_Dist;Dist;3;0;Create;True;0;0;0;False;0;False;-1;None;9b22874b4dbd8e14da217e938b557cfc;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;False;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;47;-1392,-656;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;22;-1024,-112;Inherit;False;3;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.GradientSampleNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;23;-720,-352;Inherit;True;2;0;OBJECT;;False;1;FLOAT;0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;24;-688,128;Inherit;False;Property;_Emissive_Intensity;Emissive_Intensity;6;0;Create;True;0;0;0;False;0;False;1;6.13;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;24;-688,128;Inherit;False;Property;_Emissive_Intensity;Emissive_Intensity;6;0;Create;True;0;0;0;False;0;False;1;3.5;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;50;-2022.149,-675.6918;Inherit;False;Constant;_Float2;Float 2;7;0;Create;True;0;0;0;False;0;False;0.06;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;51;-2064,-752;Inherit;False;Constant;_Float3;Float 3;7;0;Create;True;0;0;0;False;0;False;0.42;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;25;-352,16;Inherit;False;3;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
@@ -4050,10 +4050,10 @@ WireConnection;22;1;21;0
 WireConnection;22;2;33;0
 WireConnection;23;0;20;0
 WireConnection;23;1;47;0
-WireConnection;25;0;23;0
-WireConnection;25;1;22;0
+WireConnection;25;0;22;0
+WireConnection;25;1;23;0
 WireConnection;25;2;24;0
 WireConnection;53;0;25;0
 WireConnection;53;6;47;0
 ASEEND*/
-//CHKSM=48F16A0C039B5B64A316964930D03D2802AACE90
+//CHKSM=B3CAAC4682F619B3D57512D75704ED2DFAF232CF

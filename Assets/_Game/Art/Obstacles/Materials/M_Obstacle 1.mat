@@ -45,8 +45,8 @@ Material:
     - _ReceiveShadows: 1
     - _SpecularHighlights: 1
     - __dirty: 0
-    - _hdr: 1.57
+    - _hdr: 1.25
     m_Colors:
-    - _Color: {r: 0.54721963, g: 0.5638976, b: 0.7056604, a: 1}
+    - _Color: {r: 0.4978195, g: 0.7593365, b: 0.9339623, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
