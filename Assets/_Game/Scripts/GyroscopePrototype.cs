@@ -5,6 +5,7 @@ public class GyroscopePrototype : MonoBehaviour
 {
     private List<Joycon> joyconList;
 	private Quaternion orientation;
+	private Quaternion orientation2;
 	private Rigidbody rb;
     
     public int joyconIndex = 0;
