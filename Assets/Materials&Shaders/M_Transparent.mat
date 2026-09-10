@@ -48,7 +48,7 @@ Material:
     - _ReceiveShadows: 1
     - _Transparence: 1
     m_Colors:
-    - _Color: {r: 0.9961469, g: 0.6773585, b: 1, a: 1}
+    - _Color: {r: 0.99614686, g: 0.6773585, b: 1, a: 1}
     - _Color_Cube: {r: 0.93207544, g: 0.85259223, b: 0.6454183, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
