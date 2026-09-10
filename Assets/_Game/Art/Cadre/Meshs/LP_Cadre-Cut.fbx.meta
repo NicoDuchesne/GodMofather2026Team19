@@ -3,7 +3,17 @@ guid: 3ba87e91201762a42a4902f007154bf3
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadre_metal
+    second: {fileID: 2100000, guid: e1a52f32d48d0824fba4899d45b2f9af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cadre_plastique
+    second: {fileID: 2100000, guid: 23f64a6871aead94bbff7e7a0f3406df, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
