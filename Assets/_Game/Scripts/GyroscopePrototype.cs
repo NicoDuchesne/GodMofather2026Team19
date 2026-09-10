@@ -14,7 +14,7 @@ public class GyroscopePrototype : MonoBehaviour
 
     void Start ()
     {
-	    rb = GetComponent<Rigidbody>();
+	    rb = transform.GetChild(0).gameObject.GetComponent<Rigidbody>();
 	    
         joyconList = JoyconManager.Instance.j;
 		if (joyconList.Count < joyconIndex+1 || joyconIndex < 0){
@@ -31,30 +31,17 @@ public class GyroscopePrototype : MonoBehaviour
 
 			//We change the gameObject rotation based on the Z rotation from joycon
 			orientation = j.GetRollVector().normalized;
+			
+			Quaternion target = orientation.normalized;
+	    
+			Quaternion newRotation = Quaternion.RotateTowards(
+				rb.rotation,
+				target,
+				rotationSpeed * Time.fixedDeltaTime
+			);
+
+			rb.MoveRotation(newRotation);
         }
     }
     
-    void FixedUpdate()
-    {
-	    //rotate avec transform.rotation, mais ça traversait les murs
-	    // transform.rotation = Quaternion.RotateTowards(
-		   //  transform.rotation,
-		   //  orientation,
-		   //  rotationSpeed
-	    // );
-	    
-	    //rotate instantané avec un rigidbody, ça ne traverse plus mais la balle prend beaucoup de vitesse
-	    //rb.MoveRotation(orientation.normalized);
-	    
-	    //tentative de mélange, on utilise RotateWowards et rb.MoveRotation
-	    Quaternion target = orientation.normalized;
-	    
-	    Quaternion newRotation = Quaternion.RotateTowards(
-		    rb.rotation,
-		    target,
-		    rotationSpeed * Time.fixedDeltaTime
-	    );
-	    
-	    rb.MoveRotation(newRotation);
-    }
 }
