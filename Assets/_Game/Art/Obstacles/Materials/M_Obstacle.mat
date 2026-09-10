@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SH_Obstacle
+  m_Name: M_Obstacle
   m_Shader: {fileID: 4800000, guid: afe74f3499ceff945b3a4f346e69b086, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,8 +44,8 @@ Material:
     - _ReceiveShadows: 1
     - _SpecularHighlights: 1
     - __dirty: 0
-    - _hdr: 7
+    - _hdr: 5
     m_Colors:
-    - _Color: {r: 0.86468405, g: 0.5943396, b: 1, a: 1}
+    - _Color: {r: 0.5065857, g: 0.25258097, b: 0.6226415, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
