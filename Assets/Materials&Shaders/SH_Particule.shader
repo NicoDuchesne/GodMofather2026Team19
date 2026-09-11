@@ -4,7 +4,8 @@ Shader "SH_Particule"
 {
 	Properties
 	{
-		
+		_TextureSample0( "Texture Sample 0", 2D ) = "white" {}
+
 
 		//_TessPhongStrength( "Tess Phong Strength", Range( 0, 1 ) ) = 0.5
 		//_TessValue( "Tess Max Tessellation", Range( 1, 32 ) ) = 16
@@ -275,7 +276,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -287,7 +289,8 @@ Shader "SH_Particule"
 			#endif
 			CBUFFER_END
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			PackedVaryings VertexFunction( Attributes input  )
@@ -467,13 +470,12 @@ Shader "SH_Particule"
 				float3 BitangentWS = cross( input.normalWS, input.tangentWS.xyz ) * input.tangentWS.w * renormFactor;
 				float3 NormalWS = input.normalWS * renormFactor;
 
-				float2 texCoord16 = input.ase_texcoord3.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord3.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 				float3 BakedAlbedo = 0;
 				float3 BakedEmission = 0;
 				float3 Color = input.ase_color.rgb;
-				float Alpha = smoothstepResult20;
+				float Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
 					float AlphaClipThresholdShadow = 0.5;
@@ -617,7 +619,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -629,7 +632,8 @@ Shader "SH_Particule"
 			#endif
 			CBUFFER_END
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			float3 _LightDirection;
@@ -777,11 +781,10 @@ Shader "SH_Particule"
 				float4 ClipPos = ComputeClipSpacePosition( ScreenPosNorm.xy, input.positionCS.z ) * input.positionCS.w;
 				float4 ScreenPos = ComputeScreenPos( ClipPos );
 
-				float2 texCoord16 = input.ase_texcoord.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
-				float Alpha = smoothstepResult20;
+				float Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
 					float AlphaClipThresholdShadow = 0.5;
@@ -882,7 +885,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -894,7 +898,8 @@ Shader "SH_Particule"
 			#endif
 			CBUFFER_END
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			PackedVaryings VertexFunction( Attributes input  )
@@ -1022,11 +1027,10 @@ Shader "SH_Particule"
 				float4 ClipPos = ComputeClipSpacePosition( ScreenPosNorm.xy, input.positionCS.z ) * input.positionCS.w;
 				float4 ScreenPos = ComputeScreenPos( ClipPos );
 
-				float2 texCoord16 = input.ase_texcoord.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
-				float Alpha = smoothstepResult20;
+				float Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
 				#endif
@@ -1112,7 +1116,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -1124,7 +1129,8 @@ Shader "SH_Particule"
 			#endif
 			CBUFFER_END
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			int _ObjectId;
@@ -1254,11 +1260,10 @@ Shader "SH_Particule"
 			{
 				SurfaceDescription surfaceDescription = (SurfaceDescription)0;
 
-				float2 texCoord16 = input.ase_texcoord.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
-				surfaceDescription.Alpha = smoothstepResult20;
+				surfaceDescription.Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					surfaceDescription.AlphaClipThreshold = _Cutoff;
 				#endif
@@ -1337,7 +1342,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -1349,7 +1355,8 @@ Shader "SH_Particule"
 			#endif
 			CBUFFER_END
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			float4 _SelectionID;
@@ -1478,11 +1485,10 @@ Shader "SH_Particule"
 			{
 				SurfaceDescription surfaceDescription = (SurfaceDescription)0;
 
-				float2 texCoord16 = input.ase_texcoord.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
-				surfaceDescription.Alpha = smoothstepResult20;
+				surfaceDescription.Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					surfaceDescription.AlphaClipThreshold = _Cutoff;
 				#endif
@@ -1578,7 +1584,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -1590,7 +1597,8 @@ Shader "SH_Particule"
 			#endif
 			CBUFFER_END
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			struct SurfaceDescription
@@ -1739,11 +1747,10 @@ Shader "SH_Particule"
 				float4 ClipPos = ComputeClipSpacePosition( ScreenPosNorm.xy, input.positionCS.z ) * input.positionCS.w;
 				float4 ScreenPos = ComputeScreenPos( ClipPos );
 
-				float2 texCoord16 = input.ase_texcoord1.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord1.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
-				float Alpha = smoothstepResult20;
+				float Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
 				#endif
@@ -1868,7 +1875,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -1889,7 +1897,8 @@ Shader "SH_Particule"
 				int _PassValue;
 			#endif
 
-			
+			sampler2D _TextureSample0;
+
 
 			
 			PackedVaryings VertexFunction( Attributes input  )
@@ -1958,11 +1967,10 @@ Shader "SH_Particule"
 				float4 ScreenPosNorm = float4( GetNormalizedScreenSpaceUV( input.positionCS ), input.positionCS.zw );
 				float4 ClipPos = ComputeClipSpacePosition( ScreenPosNorm.xy, input.positionCS.z ) * input.positionCS.w;
 
-				float2 texCoord16 = input.ase_texcoord3.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord3.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
-				float Alpha = smoothstepResult20;
+				float Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
 				#endif
@@ -2097,7 +2105,8 @@ Shader "SH_Particule"
 			};
 
 			CBUFFER_START(UnityPerMaterial)
-						float _AlphaClip;
+			float4 _TextureSample0_ST;
+			float _AlphaClip;
 			float _Cutoff;
 			#ifdef ASE_TESSELLATION
 				float _TessPhongStrength;
@@ -2118,7 +2127,8 @@ Shader "SH_Particule"
 				int _PassValue;
 			#endif
 
-			
+			sampler2D _TextureSample0;
+
 
 			#if ( UNITY_VERSION >= 60010000 )
 			#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/GBufferOutput.hlsl"
@@ -2282,12 +2292,11 @@ Shader "SH_Particule"
 				float3 BitangentWS = cross( input.normalWS, input.tangentWS.xyz ) * input.tangentWS.w * renormFactor;
 				float3 NormalWS = input.normalWS * renormFactor;
 
-				float2 texCoord16 = input.ase_texcoord3.xy * float2( 1,1 ) + float2( 0,0 );
-				float smoothstepResult20 = smoothstep( 0.23 , -0.13 , length( (texCoord16*1.0 + float2( -0.5,-0.5 )) ));
+				float2 uv_TextureSample0 = input.ase_texcoord3.xy * _TextureSample0_ST.xy + _TextureSample0_ST.zw;
 				
 
 				float3 Color = input.ase_color.rgb;
-				float Alpha = smoothstepResult20;
+				float Alpha = tex2D( _TextureSample0, uv_TextureSample0 ).a;
 				#if defined( _ALPHATEST_ON )
 					float AlphaClipThreshold = _Cutoff;
 					float AlphaClipThresholdShadow = 0.5;
@@ -2360,6 +2369,7 @@ Node;AmplifyShaderEditor.RangedFloatNode, AmplifyShaderEditor, Version=0.0.0.0, 
 Node;AmplifyShaderEditor.OneMinusNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;24;-192,-16;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SmoothstepOpNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;20;-384,-272;Inherit;True;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.VertexColorNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;21;-112,-588;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;50;-494.9252,-429.6174;Inherit;True;Property;_TextureSample0;Texture Sample 0;0;0;Create;True;0;0;0;False;0;False;-1;None;f713fa9084b4c8147b3cc159b3d9aa67;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;False;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;6;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT3;5
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;37;336,-176;Float;False;False;-1;3;UnityEditor.ShaderGraphUnlitGUI;0;1;New Amplify Shader;2992e84f91cbeb14eab234972e07ea9d;True;ExtraPrePass;0;0;ExtraPrePass;6;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;False;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;False;False;False;False;True;4;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;UniversalMaterialType=Unlit;True;5;True;14;all;0;False;True;1;1;False;;0;False;;0;1;False;;0;False;;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;True;True;True;True;0;False;;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;True;1;False;;True;3;False;;True;True;0;False;;0;False;;False;True;0;False;False;0;;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;39;336,-176;Float;False;False;-1;3;UnityEditor.ShaderGraphUnlitGUI;0;1;New Amplify Shader;2992e84f91cbeb14eab234972e07ea9d;True;ShadowCaster;0;2;ShadowCaster;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;False;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;False;False;False;False;True;4;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;UniversalMaterialType=Unlit;True;5;True;14;all;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;False;False;True;False;False;False;False;0;False;;False;False;False;False;False;False;False;False;False;True;1;False;;True;3;False;;False;False;True;1;LightMode=ShadowCaster;False;False;0;;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode, AmplifyShaderEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;40;336,-176;Float;False;False;-1;3;UnityEditor.ShaderGraphUnlitGUI;0;1;New Amplify Shader;2992e84f91cbeb14eab234972e07ea9d;True;DepthOnly;0;3;DepthOnly;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;True;0;False;;False;False;False;False;False;False;False;False;False;True;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;False;False;False;False;True;4;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;UniversalMaterialType=Unlit;True;5;True;14;all;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;;False;False;False;True;False;False;False;False;0;False;;False;False;False;False;False;False;False;False;False;True;1;False;;False;False;False;True;1;LightMode=DepthOnly;False;False;0;;0;0;Standard;0;False;0
@@ -2381,6 +2391,6 @@ WireConnection;20;0;19;0
 WireConnection;20;1;26;0
 WireConnection;20;2;25;0
 WireConnection;38;2;21;0
-WireConnection;38;3;20;0
+WireConnection;38;3;50;4
 ASEEND*/
-//CHKSM=6E36756BC1FAB0AC7472487A28C95FF1818D2157
+//CHKSM=83FA11CDF5182405E0A938E3BCB0DE8F2BB7F568
