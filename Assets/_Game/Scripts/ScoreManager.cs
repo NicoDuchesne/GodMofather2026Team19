@@ -49,7 +49,7 @@ public class ScoreManager : MonoBehaviour
         {
             scoreLabel.text = scoreLabel.text.Insert(0, "0");
         }
-        scoreLabel.color = Color.orange;
+        scoreLabel.color = Color.purple;
         scoreLabel.DOColor(Color.white, fxTime);
 
     }
