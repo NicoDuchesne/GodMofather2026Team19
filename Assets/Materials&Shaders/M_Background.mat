@@ -120,10 +120,10 @@ Material:
     - _d_tile_x: 2.07
     - _d_tile_y: 0.65
     - _hdr: 0
-    - _t_pan_x: -0.02
-    - _t_pan_y: 0
-    - _t_tile_x: 1
-    - _t_tile_y: 20
+    - _t_pan_x: 0
+    - _t_pan_y: 0.01
+    - _t_tile_x: 1.23
+    - _t_tile_y: 6.28
     - _test_1: 3.04
     - _test_2: 4.68
     m_Colors:
