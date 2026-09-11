@@ -984,7 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 058fdcb1bde010e4d949fc6a4551a695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuFunctions
-  SceneToLoad: SceneGame
+  SceneToLoad: Tuto_joycon
 --- !u!1 &2115283150
 GameObject:
   m_ObjectHideFlags: 0
