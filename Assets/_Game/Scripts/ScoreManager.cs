@@ -2,7 +2,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using AmplifyShaderEditor;
 using JetBrains.Annotations;
 
 public class ScoreManager : MonoBehaviour
