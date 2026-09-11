@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using JetBrains.Annotations;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreLabel;
     [SerializeField] TextMeshProUGUI timerLabel;
     [SerializeField] TextMeshProUGUI ballLabel;
-    [SerializeField] private GameObject ballList;
+    [SerializeField] public GameObject ballList;
     
     int score;
     float timer = 60;
@@ -25,18 +27,40 @@ public class ScoreManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+        {
+            Time.timeScale = 1;
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+            return;
+        }
+        
         timer -= Time.deltaTime;
-        timerLabel.text = (Mathf.Round(timer)).ToString();
+        
+        float rounded = Mathf.Round(timer);
+        float minute = Mathf.Floor(rounded / 60);
+        float second = rounded % 60;
+        
+        string minuteStr = minute.ToString("00");
+        string secondStr = second.ToString("00");
+        timerLabel.text = minuteStr + ":" + secondStr;
+            
+        //timerLabel.text = (Mathf.Round(timer)).ToString();
 
         if (timer <= 0 && !timeOut)
         {
             timeOut = true;
+            GameOver();
+        }
+
+        if (ballList.transform.childCount == 0)
+        {
             GameOver();
         }
 

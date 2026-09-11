@@ -41,7 +41,9 @@ public class Collectible : MonoBehaviour
 
             for (int i = 0; i < 2; i++)
             {
-                marble = Instantiate(marblePrefab, transform.position, transform.rotation);
+                //marble = Instantiate(marblePrefab, transform.position, transform.rotation);
+                
+                marble = Instantiate(marblePrefab, transform.position, transform.rotation, GameObject.Find("BallList").transform);
             }
 
             this.GameObject().SetActive(false);
