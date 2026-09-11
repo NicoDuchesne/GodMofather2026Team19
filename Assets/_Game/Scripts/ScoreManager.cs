@@ -14,6 +14,9 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI scoreLabel;
     [SerializeField] TextMeshProUGUI timerLabel;
+    [SerializeField] TextMeshProUGUI ballLabel;
+    [SerializeField] private GameObject ballList;
+    
     int score;
     float timer = 60;
     bool timeOut = false;
@@ -36,6 +39,8 @@ public class ScoreManager : MonoBehaviour
             timeOut = true;
             GameOver();
         }
+
+        ballLabel.text = ballList.transform.childCount.ToString();
     }
 
     public void IncrementScore(int scoreIncrement)
