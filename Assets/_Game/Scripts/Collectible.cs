@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks.Triggers;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
@@ -10,6 +11,7 @@ public class Collectible : MonoBehaviour
     private Transform collectibleTransform;
     [SerializeField] int collectibleScore = 8;
     [SerializeField] GameObject marblePrefab;
+    [SerializeField] GameObject burst;
     float fadeTime = 0.5f;
     GameObject marble;
 
@@ -42,6 +44,9 @@ public class Collectible : MonoBehaviour
                 marble = Instantiate(marblePrefab, transform.position, transform.rotation);
             }
 
+            this.GameObject().SetActive(false);
+            burst.SetActive(true);
+            
             collectibleTransform.DOScale(1.2f, fadeTime).SetEase(Ease.OutQuart);
             collectibleMesh.material.DOFade(0f, fadeTime).OnComplete(() =>
             {
