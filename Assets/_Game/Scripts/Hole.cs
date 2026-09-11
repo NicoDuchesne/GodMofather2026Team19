@@ -5,7 +5,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class Hole : MonoBehaviour
 {
-    int endScore = 100;
+    int endScore = 88;
     [SerializeField] int scoreMult = 1;
     float marbleFadeTime = 0.5f;
 
