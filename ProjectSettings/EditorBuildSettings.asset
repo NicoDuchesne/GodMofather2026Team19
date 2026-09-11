@@ -17,9 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tuto_joycon.unity
     guid: 920f140f4b76cd2468bdd7bf724175c0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SceneGame.unity
     guid: 23c76ff14265b2547a66a893d6ef4249
+  - enabled: 1
+    path: Assets/Scenes/SceneGame_Backup.unity
+    guid: 12df1826bb456d04399b27f86c8bff4c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

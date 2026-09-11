@@ -27,7 +27,7 @@ public class ScoreManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -35,8 +35,10 @@ public class ScoreManager : MonoBehaviour
     {
         if (Keyboard.current.pKey.wasPressedThisFrame)
         {
+            Time.timeScale = 1;
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
+            return;
         }
         
         timer -= Time.deltaTime;
