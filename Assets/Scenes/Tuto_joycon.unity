@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JoyconScene
   waitTime: 5
-  NextScene: SceneGame_Backup
+  NextScene: SceneGameLight
 --- !u!4 &1849270424
 Transform:
   m_ObjectHideFlags: 0
